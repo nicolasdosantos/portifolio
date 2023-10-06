@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
+
+
+
+img {
+    max-width: 100%;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+header {
+    background-image: url(img/Imagem-banner.svg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    font-family: 'Contrail One', cursive;
+}
+
+header h3 {
+    font-family: 'Contrail One', cursive;
+    font-size: 200px;
+}
+
+#nav {
+    display: flex;
+    text-align: center;
+    padding: 10px;
+}
+
+#nav button {
+    font-size: 18px;
+    color: rgb(95, 95, 95);
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+#nav button:focus,
+#nav button:hover {
+    color: white;
+}
+
+#nav button:focus:after,
+#nav button:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+#nav button:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #D89209;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+#titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: calc(100vh - 35px);
+}
+
+#titulo h3 {
+    font-size: 60px;
+    text-align: center;
+}
+
+#titulo img {
+    width: 400px;
+}
+
+#sobre h3,
+#sobre p {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Contrail One', cursive;
+}
+
+#sobre h3 {
+    color: #D89209;
+}
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#sobre-banner {
+    background-image: url(img/banner-sobre.png);
+}
+
+
+#projetos {
+    background-image: url(img/Design\ sem\ nome\ \(7\).png);
+    background-size: cover;
+    height: 100vh;
+}
+
+#projetos h4 {
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    transition: 0.300s ease-in;
+    border-radius: 18px;
+    background-color: black;
+
+}
+
+.card img{
+    border-radius: 15px;
+    max-width: 100%;
+}
+
+.card:not(:first-child) {
+    margin-left: -100px;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+}
+
+.card:hover~.card {
+    left: 50px;
+}
