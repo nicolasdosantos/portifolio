@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap');
 
 
 
@@ -30,10 +31,38 @@ header {
     font-family: 'Contrail One', cursive;
 }
 
-header h3 {
+header h3{
+
     font-family: 'Contrail One', cursive;
     font-size: 200px;
+    font-size: 18px;
+    color: rgb(95, 95, 95);
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 1000ms;
+    transition-property: color;
+    
 }
+
+#titulo :focus,
+#titulo :hover {
+    color: white;
+}
+
+#titulo :focus:after,
+#titulo :hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+
+
 
 #nav {
     display: flex;
@@ -150,7 +179,7 @@ header h3 {
 
 }
 
-.card img{
+.card img {
     border-radius: 15px;
     max-width: 100%;
 }
@@ -165,4 +194,50 @@ header h3 {
 
 .card:hover~.card {
     left: 50px;
+}
+
+.container-lg {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-lg {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 8px solid black;
+    border-radius: 25px;
+    text-align: center;
+    align-items: center;
+    height: 290px;
+    width: 240px;
+}
+
+.card-lg p {
+    padding-top: 20px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+
+}
+
+.card-lg img {
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+
+
+/* -------------- MEDIA QUERIES ---------------*/
+
+
+@media (max-width: 767px){
+    #nav{
+        justify-content: space-between;
+    }
 }
