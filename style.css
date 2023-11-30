@@ -117,6 +117,9 @@ header h3{
     text-align: center;
     justify-content: center;
     height: calc(100vh - 35px);
+    position: absolute;
+    animation-name: entrada;
+    animation-duration: 1s;
 }
 
 #titulo h3 {
@@ -168,7 +171,7 @@ header h3{
     align-items: center;
 }
 
-.card {
+.card{
     position: relative;
     left: 0px;
     height: 100%;
@@ -239,5 +242,15 @@ header h3{
 @media (max-width: 767px){
     #nav{
         justify-content: space-between;
+    }
+}
+
+
+@keyframes entrada{
+    0%{
+        right: 500px;
+    }
+    100%{
+        right: 0px;
     }
 }

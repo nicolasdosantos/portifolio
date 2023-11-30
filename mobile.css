@@ -2,6 +2,9 @@
     .image{
         display: none;
     }
+    #Titulo{
+        width: 100%;
+    }
 }
 
 @media (max-width: 961px) {
@@ -9,3 +12,15 @@
         gap: 0px;
     }
 }
+
+
+@media (max-width: 675px){
+    #Lingua{
+        font-size: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+}
+
