@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+    .image{
+        display: none;
+    }
+}
+
+@media (max-width: 961px) {
+    #Lingua{
+        gap: 0px;
+    }
+}
